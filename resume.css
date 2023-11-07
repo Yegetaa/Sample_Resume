@@ -1,0 +1,67 @@
+body{
+    background-color:rgb(73, 73, 139);
+    color: azure;
+    width: 100%;
+    height: 100%; 
+}
+
+#main_container{
+    display: flex;
+}
+
+/* section1 has box1, box2 and box3 in it */
+#section_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+}
+
+/* box1 has div img div and div h2nameh2 pjobtitlep div */
+
+#box1 {
+    display: flex;
+    flex-grow: 10;
+    /* border: 2px solid black;  */
+}
+
+#box1 img {
+    width: 125;
+    height: 125;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+/* I want to center my header and the paragraph in its div: */
+#name {
+    text-align: center;
+}
+/* looks like paragraph is centered but header isn't */
+
+#box2 {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#box2 p {
+    text-align: start;
+}
+
+
+#section_2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#left_column {
+    flex: 70%;
+    /* border: 2px solid black; */
+}
+
+aside{
+    flex: 30%;
+    /* border: 2px solid black; */
+}
